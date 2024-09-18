@@ -1,0 +1,244 @@
+.white-bg{
+    -fx-background-color: #fff;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,5),5,0,0,0);
+}
+
+.bg-radius{
+    -fx-background-radius: 5px;
+}
+
+.black-bg{
+    -fx-background-color: #222831;
+}
+
+.search-anime{
+    -fx-background-color: #0E46A3;
+    -fx-text-fill:  #fff;
+    -fx-background-radius:  10px;
+}
+
+.search-anime:hover{
+    -fx-opacity: 0.7;
+}
+.btn-header{
+    -fx-background-color: #0E46A3;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 10px;
+    -fx-text-fill: #fff;
+}
+
+.header-label{
+    -fx-font-size: 15px;
+    -fx-text-fill: #fff;
+    -fx-font-weight: bold;
+}
+
+.logout{
+    -fx-background-color: #106abf;
+    -fx-padding: 5px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;
+}
+
+.logout:hover{
+    -fx-background-color: #E72929;
+}
+
+.search{
+    -fx-background-radius: 10px;
+    -fx-background-color: #31363F;
+    -fx-text-fill: #fff;
+}
+
+.btn-header:hover,
+.information-btn:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 0.7;
+}
+
+.btn-setting{
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+}
+
+.information{
+    -fx-background-color: transparent;
+    -fx-border-color: #B4B4B8;
+    -fx-border-width: 0 2px 0 0;
+}
+
+.image-border{
+    -fx-border-color: #B4B4B8;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.information-btn{
+    -fx-min-width: 200px;
+    -fx-min-height: 20px;
+    -fx-background-color: transparent;
+    -fx-border-color: #B4B4B8;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.online{
+    -fx-text-fill: #41B06E;
+    -fx-font-weight: bold;
+}
+
+.offline{
+    -fx-text-fill: #A9A9A9;
+    -fx-font-weight: bold;
+}
+
+
+.head-profile-bg{
+    -fx-border-color: #B4B4B8;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.table-column{
+    -fx-alignment: center;
+}
+
+.btn-modify{
+    -fx-padding: 10px 25px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to bottom right, #FC4100, #FFC55A);
+    -fx-cursor: hand;
+    -fx-background-radius: 30px;
+}
+
+.btn-modify:hover{
+    -fx-opacity: 0.7;
+    -fx-font-weight: bold;
+}
+
+.season-1-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #FF5580;
+    -fx-font-weight: bold;
+}
+
+.season-2-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #FC4100;
+    -fx-font-weight: bold;
+}
+
+.season-3-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #FEB941;
+    -fx-font-weight: bold;
+}
+
+.season-4-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #68D2E8;
+    -fx-font-weight: bold;
+}
+
+.status-1-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #0A6847;
+    -fx-font-weight: bold;
+}
+
+.status-2-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #E72929;
+    -fx-font-weight: bold;
+}
+
+.status-3-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #B4B4B8;
+    -fx-font-weight: bold;
+}
+
+.status-4-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #00215E;
+    -fx-font-weight: bold;
+}
+
+.type-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #114232;
+    -fx-font-weight: bold;
+}
+
+.nation-showcase{
+    -fx-font-size: 15px;
+    -fx-text-fill: #FC4100;
+    -fx-font-weight: bold;
+}
+
+.on-notify{
+    -fx-text-fill: green;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.notify{
+    -fx-background-color: #fff;
+}
+
+.off-notify{
+    -fx-text-fill: red;
+    -fx-padding: 5px 15px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.add-mylist{
+    -fx-background-color:  #4f74c8;
+    -fx-border-color:  #4f74c8;
+    -fx-border-width: 1px;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 4px;
+}
+
+.add-mylist:hover{
+    -fx-opacity: 0.8;
+}
+
+.select-score{
+    -fx-background-color: #fff;
+    -fx-border-color: #bebebe;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+}
+
+.btn-schedule{
+    -fx-background-color: linear-gradient(to bottom right, #212121, #3D3C42);
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+}
+
+.btn-schedule:hover{
+    -fx-background-color: #A1DD70;
+    -fx-text-fill: #000;
+}
+
+.btn-cancel{
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: #000;
+    -fx-font-size: 14px;
+}
+
+.btn-cancel:hover{
+    -fx-background-color: #E72929;
+    -fx-text-fill: #fff;
+}

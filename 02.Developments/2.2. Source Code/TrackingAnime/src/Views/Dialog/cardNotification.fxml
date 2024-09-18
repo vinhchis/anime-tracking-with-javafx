@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="75.0" prefWidth="300.0" stylesheets="@../../Assets/css/trackinganimeDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CardNotificationController">
+   <children>
+      <HBox prefHeight="75.0" prefWidth="380.0">
+         <children>
+            <ImageView fx:id="nf_imvPoster" fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="100.0" prefWidth="200.0" spacing="2.0" style="-fx-border-color: #000; -fx-border-width: 0 0 0 1px;">
+               <children>
+                  <Label fx:id="nf_lblTitle" text="Label" textFill="#0d18f2" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label fx:id="nf_lblStatus" text="Label" textFill="#a6a0a0" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label fx:id="nf_lblDate" text="Label" textFill="RED" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label fx:id="nf_lblTime" text="Label" textFill="#ebde00" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="white-bg" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

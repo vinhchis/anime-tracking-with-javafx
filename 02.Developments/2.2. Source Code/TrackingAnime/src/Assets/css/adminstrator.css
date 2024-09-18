@@ -1,0 +1,33 @@
+.btn{
+    -fx-background-color: #fff;
+    -fx-border-color: #2e51a2;
+    -fx-border-radius: 4px;
+    -fx-font-size: 15px;
+    -fx-text-fill: #000;
+    -fx-min-width: 200px;
+    -fx-min-height: 50px;
+}
+
+.btn:hover{
+    -fx-background-color:  #2e51a2;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+}
+
+.menu{
+    -fx-background-color:  #e1e7f5;
+    -fx-border-color: #2e51a2;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.signout{
+    -fx-background-color: #fff;
+    -fx-border-color: #2e51a2;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.signout:hover{
+    -fx-background-color: #E72929;
+}

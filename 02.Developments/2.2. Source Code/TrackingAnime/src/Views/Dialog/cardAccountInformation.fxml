@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ca_apAccountInformation" prefHeight="380.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CardAccountInformationController">
+   <children>
+      <Button fx:id="ca_btnProceed" layoutX="25.0" layoutY="268.0" mnemonicParsing="false" onAction="#proceedBtn" styleClass="login-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Proceed" AnchorPane.bottomAnchor="5.0" />
+      <VBox prefWidth="250.0" spacing="20.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label text="Old Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="ca_txtOldPassword" />
+            <Label text="Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="ca_txtPassword" />
+            <Label text="Confirm Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="ca_txtConfirmPassword" />
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" top="15.0" />
+         </padding>
+      </VBox>
+      <Label layoutY="14.0" styleClass="head-label" stylesheets="@../../Assets/css/loginDesgin.css" text="Account's Information" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

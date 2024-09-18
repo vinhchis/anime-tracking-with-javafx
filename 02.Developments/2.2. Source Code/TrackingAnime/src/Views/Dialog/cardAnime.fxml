@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" stylesheets="@../../Assets/css/trackinganimeDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CardAnimeController">
+   <children>
+      <VBox layoutY="-20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane stylesheets="@../../Assets/css/trackinganimeDesign.css">
+               <children>
+                  <ImageView fx:id="anime_imageView" fitHeight="200.0" fitWidth="200.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="white-bg" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Hyperlink fx:id="anime_hyperlinkTitle" alignment="CENTER" onAction="#hyperlinkTitleClicked" prefHeight="26.0" prefWidth="199.0" style="-fx-alignment: center;" text="Hyperlink" textAlignment="CENTER" textFill="#00a1ff" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="white-bg" />
+      <String fx:value="bg-radius" />
+   </styleClass>
+</AnchorPane>

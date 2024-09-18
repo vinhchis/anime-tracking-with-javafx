@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FormController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="loginForm" layoutX="300.0" prefHeight="500.0" prefWidth="300.0">
+               <children>
+                  <Label layoutX="65.0" layoutY="70.0" prefHeight="28.0" prefWidth="169.0" styleClass="head-label" stylesheets="@../../Assets/css/loginDesgin.css" text="Login's account" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="167.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Username">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="15.0" layoutY="256.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Password">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="si_usernameTxt" layoutX="14.0" layoutY="195.0" prefHeight="40.0" prefWidth="250.0" promptText="Username" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Button fx:id="si_btnLogin" layoutX="50.0" layoutY="364.0" mnemonicParsing="false" onAction="#loginBtn" prefWidth="200.0" styleClass="login-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Login">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <PasswordField fx:id="si_passwordTxt" layoutX="15.0" layoutY="284.0" prefHeight="40.0" prefWidth="250.0" promptText="Password" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Hyperlink fx:id="si_forgotPasswordLink" layoutX="11.0" layoutY="332.0" onAction="#linkForgotPassword" stylesheets="@../../Assets/css/loginDesgin.css" text="Forgot Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="registerForm" prefHeight="500.0" prefWidth="300.0">
+               <children>
+                  <Label layoutX="58.0" layoutY="71.0" styleClass="head-label" stylesheets="@../../Assets/css/loginDesgin.css" text="Register Account" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="132.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Username">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="205.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Password">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_usernameTxt" layoutX="24.0" layoutY="159.0" prefHeight="40.0" prefWidth="250.0" promptText="Username" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <PasswordField fx:id="su_passwordTxt" layoutX="24.0" layoutY="230.0" prefHeight="40.0" prefWidth="250.0" promptText="Password" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Label layoutX="25.0" layoutY="276.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Confirm Password">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="su_confirmpasswordTxt" layoutX="24.0" layoutY="302.0" prefHeight="40.0" prefWidth="250.0" promptText="Password" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Label layoutX="25.0" layoutY="351.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Email">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_emailTxt" layoutX="25.0" layoutY="378.0" prefHeight="40.0" prefWidth="250.0" promptText="Email" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Button fx:id="btnSignUp" layoutX="41.0" layoutY="446.0" mnemonicParsing="false" onAction="#registerBtn" prefWidth="200.0" styleClass="login-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Sign Up">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="82.0" layoutY="132.0" stylesheets="@../../Assets/css/loginDesgin.css" text="*" textFill="RED" />
+                  <Label layoutX="80.0" layoutY="205.0" stylesheets="@../../Assets/css/loginDesgin.css" text="*" textFill="RED" />
+                  <Label layoutX="130.0" layoutY="276.0" stylesheets="@../../Assets/css/loginDesgin.css" text="*" textFill="RED" />
+                  <Label layoutX="58.0" layoutY="350.0" stylesheets="@../../Assets/css/loginDesgin.css" text="*" textFill="RED" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="forgotForm" layoutX="300.0" prefHeight="500.0" prefWidth="300.0" visible="false">
+               <children>
+                  <Label layoutX="73.0" layoutY="64.0" styleClass="head-label" stylesheets="@../../Assets/css/loginDesgin.css" text="Forgot Password" AnchorPane.topAnchor="70.0" />
+                  <Label layoutX="25.0" layoutY="195.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Email">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fp_emailTxt" layoutX="25.0" layoutY="230.0" promptText="Email" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Button fx:id="fp_proceedBtn" layoutX="50.0" layoutY="306.0" mnemonicParsing="false" onAction="#proceedBtn" styleClass="login-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Proceed" />
+                  <Button fx:id="fp_backBtn" layoutX="24.0" layoutY="436.0" mnemonicParsing="false" onAction="#backLoginFormBtn" prefHeight="30.0" prefWidth="50.0" styleClass="back-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Back">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="newpassForm" layoutX="300.0" prefHeight="500.0" prefWidth="300.0" visible="false">
+               <children>
+                  <Label layoutX="83.0" layoutY="62.0" styleClass="head-label" stylesheets="@../../Assets/css/loginDesgin.css" text="New Password" AnchorPane.topAnchor="70.0" />
+                  <Label layoutX="14.0" layoutY="166.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Password">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="251.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Confirm Password">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="np_passwordTxt" layoutX="14.0" layoutY="193.0" promptText="Password" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <PasswordField fx:id="np_confirmPasswordTxt" layoutX="14.0" layoutY="278.0" promptText="Confirm Password" styleClass="textfield" stylesheets="@../../Assets/css/loginDesgin.css" />
+                  <Button fx:id="np_changePasswordBtn" layoutX="39.0" layoutY="348.0" mnemonicParsing="false" onAction="#changePasswordBtn" styleClass="login-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Change Password" />
+                  <Button fx:id="np_backBtn" layoutX="14.0" layoutY="440.0" mnemonicParsing="false" onAction="#backForgotPasswordFormBtn" prefHeight="30.0" prefWidth="50.0" styleClass="back-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Back">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sideForm" prefHeight="500.0" prefWidth="300.0" styleClass="gradient" stylesheets="@../../Assets/css/loginDesgin.css">
+               <children>
+                  <Button fx:id="side_btnCreate" layoutX="50.0" layoutY="455.0" mnemonicParsing="false" onAction="#switchForm" styleClass="create-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Create Account" AnchorPane.bottomAnchor="14.600000000000023" />
+                  <Label layoutX="56.0" layoutY="399.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Create new Account" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="68.0" stylesheets="@../../Assets/css/loginDesgin.css" text="Tracking Anime" textFill="WHITE" AnchorPane.topAnchor="70.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="side_alreadyBtn" layoutX="50.0" layoutY="446.0" mnemonicParsing="false" onAction="#switchForm" styleClass="create-btn" stylesheets="@../../Assets/css/loginDesgin.css" text="Already have an account" visible="false" />
+                  <ImageView fitHeight="189.0" fitWidth="235.0" layoutX="33.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Assets/images/loginform.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
